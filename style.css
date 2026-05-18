@@ -31,10 +31,11 @@ height: 200px;
     padding-left: 40px;
 
 }
-h1{
+.nav-h1{
     font-size: 2.6rem;
     font-weight: 900;
     letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h5{
    font-size: 24.2px;
@@ -43,9 +44,9 @@ h5{
    font-weight: 800;
    color: rgb(155, 3, 0); 
 }
-p{
-font-size: 20.3px;
-font-weight: 600;
+.nav-p{
+font-size: 19.5px;
+font-weight: 550;
 color: rgba(24, 24, 24, 0.616); 
 }
 
@@ -153,11 +154,10 @@ h2{
     margin-left: 32px;
 }
 .hero-p{
-    font-size: 19px;
+    font-size: 17px;
     font-weight:500;
     margin-left: 22px;
     color: rgb(90, 90, 90);
-    margin-top: 8px;
 }
 .hero-form{
     display: flex;
@@ -210,7 +210,7 @@ input{
 }
 textarea{
     width: 100%;
-    height: 80px;
+    height: 70px;
     padding-top: 6px;
     padding-left: 8px;
     font-weight: 700;
@@ -223,18 +223,18 @@ textarea{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 8px;
+    
 
 }
 .Ask{
-    width: 47%;
-    height: 48px;
+    width: 46%;
+    height: 42px;
     background-color: rgb(183, 6, 6);
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     border: none;
     padding: 8px 12px;
-    margin-right: 39px;
+    margin-right: 40px;
 }
 .Guaranteed{
     font-size: 15px;
@@ -247,21 +247,22 @@ textarea{
 
 /* Section 2 CSS */
 
-.section2{
+.sec2-main{
     display: flex;
     justify-content: center;
-    height: 400px;
-   
+    height: 340px;
+    margin-left: 12px; 
 }
 .sec2-div1{
-    width: 30%;
+    width: 27%;
     height: 300px;
   
 }
 .sec2-h1{
     font-size: 24px;
     font-weight: 800;
-    font-family:Georgia, 'Times New Roman', Times, serif
+     font-family: "Merriweather", serif;
+
 }
 h3{
     margin-top: 6PX;
@@ -285,7 +286,7 @@ h3{
 .para p{
     font-size: 16px;
     font-weight: 550;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -306,13 +307,38 @@ h3{
     margin-right: 20px;
     
 }
+.sec2-btn1{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 10px;
+   
+}
 .click-here1{
     width: 130px;
-    padding: 8px 12px;
+    padding: 4px 12px;
     background-color: #a30705;
     color: white;
     border: none;
     margin-right: 36px;
+    margin-top: 12px;
+}
+.click-here11{
+    width: 130px;
+    padding: 4px 12px;
+    background-color: #a30705;
+    color: white;
+    border: none;
+    margin-right: 16px;
+    margin-top: 12px;
+}
+.sec3-btn{
+    width: 130px;
+    padding: 2px 4px;
+    background-color: #a30705;
+    color: white;
+    border: none;
+    margin-right: 8%;
     margin-top: 12px;
 }
 .hr_shadow{
@@ -321,16 +347,231 @@ h3{
     z-index: -1;
     margin-right: 12px;
     margin-top: 12px;
-    height: 6px;
+    background-color: gray;
+    height: 1px;
+}
+.hr_shadow1{
+    position: absolute;
+    width: 180px;
+    z-index: -1;
+    background-color: gray;
+    margin-top: 12px;
+    height: 1px;
+}
+.sec3-shadline{
+    position: absolute;
+    width: 180px;
+    z-index: -1;
+    background-color: gray;
+    margin-top: 12px;
+    height: 1px;
+    right:3%;
+}
+.separater{
+      background-color: gray;
+       height: 1px;
 }
 .sec2-div2{
-      width: 33%;
+   display: flex;
+   flex-direction: column;
+   row-gap: 2px;
+      width: 36%;
     height: 300px;
     
     
+}
+.row1{
+    display: flex;
+}
+.card2-row2{
+    display: flex;
+    margin-top: 10px;
+}
+.row1-left{
+    width: 50%;
+     padding-left: 24px;
+    
+     height: 150px;
+}
+.row2-left{
+     padding-left: 24px;
+     height: 150px;
+}
+.row1-right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+   
+    height: 150px;
+
+}
+.row2-right{
+    display: flex;
+justify-content: end;
+    width: 40%;
+    height: 150px;
+
+}
+.sec2-para{
+    font-size: 16px;
+    margin-top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+}
+.laptop-img{
+    width: 190px;
+    height: 110px;
+    margin-bottom: 12px;
+}
+.order-img{
+    width: 170px;
+    height: 120px;
+    margin-right: 26px;
+    margin-top: 10px;
 }
 
 .sec2-div3{
       width: 30%;
     height: 300px;
+}
+.card3-row1{
+   display: flex;
+   justify-content: center;
+   column-gap: 22px;
+   margin-right: 22px;
+}
+.img-small{
+    margin-top: 20px;
+    width: 135px;
+    height: 110px;
+}
+.img-large{
+       margin-top: 10px;
+       width: 130px;
+        height: 115px;
+}
+.card3-row2{
+    margin-top: 10px;
+    padding-left: 26px;
+}
+pre{
+     font-size: 16px;
+    margin-top: 6px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    color: rgb(112, 112, 112);
+}
+.btm-shadow{
+    width: 100%;
+    height: 10px;
+}
+
+/* Section 3 CSs */
+
+.section3{
+    display: flex;
+    height: 800px;
+    border: 2px solid black;
+    margin-top: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.sec3-col1{
+    width: 30%;
+    border: 2px solid black;
+    padding: 4px 12px;
+}
+.sec3-col1 h2{
+    text-align: left;
+    font-size: 20px;
+}
+.sec3-h2{
+    margin-left: 0;
+    color: #5f5f5f;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+}
+.h3{
+    margin-top: 24px;
+}
+.gray-btn{
+    position:relative;
+    width:240px;
+    height:40px;
+    display:block;
+    padding:18px 18px 16px 24px;
+    margin-bottom:20px;
+    color:white;
+    text-decoration:none;
+    background:linear-gradient(to bottom,#8e8e8e,#6f6f6f);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.25),
+        0 4px 8px rgba(0,0,0,.35);
+
+}
+.top{
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: -2%;
+}
+.bottom{
+    font-weight: 550;
+}
+.gray-btn::before{
+    content:"";
+        position:absolute;
+        left:0;
+        top:0;
+        width:10px;
+        height:100%;
+        background:linear-gradient(to bottom,#b01217,#6f0000);
+}
+.bottom{
+    text-align: right;
+}
+.fa-play{
+    color:white;
+    font-family:Georgia Bold, 'Times New Roman', Times, serif
+}
+.play2{
+    color:#7d0401;
+}
+.sec4-span{
+    color: #a30705;
+    font-size: 20px;
+    font-weight: 700;
+     font-family: "Playfair", serif;
+}
+.sec3-h1{
+     font-family: "Merriweather", serif;
+     font-size: 24px;
+     font-weight: 600;
+     color: #6f0000;
+}
+
+.sec3-col2{
+    width: 50%;
+    border: 2px solid black;
+    padding: 24px 32px;
+}
+.sec3-h1{
+    font-weight: 600;
+}
+.sec3-p{
+    color: #8e8e8e;
+    line-height: 1.8;
+
+}
+
+.sec3-col3{
+    width: 20%;
+    border: 2px solid black;
+}
+
+.sec3-para{
+    font-size: 16px;
+    color: #8e8e8e;
 }
